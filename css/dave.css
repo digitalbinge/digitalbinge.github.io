@@ -5,7 +5,7 @@ body, html {
 }
 
 
-#nav-toggle-state {
+/*#nav-toggle-state {
   display: none;
 }
 
@@ -23,7 +23,7 @@ body, html {
     padding-top: 52px;
     position: relative;
     bottom: 52px;
-  }
+  }*/
 
 .pear-background {
     background-image: url('../images/pears.jpg');
