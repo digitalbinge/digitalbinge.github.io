@@ -1,0 +1,23 @@
+@keyframes logo {
+    from {color: rgba(255,255,255,0);}
+    to {color: rgba(255,255,255,.8);}
+}
+
+@keyframes logoborder {
+    from {border: solid 5px rgba(255,255,255,0); transform: rotateX(0deg);}
+    to {border: solid 5px rgba(255,255,255,.8); transform: rotateX(360deg);}
+}
+
+
+
+.parallax-background-container {
+	background-image: url('../portfolio-images/creative-macbook.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 45vh 10vw;
+    margin: none;
+}
+
