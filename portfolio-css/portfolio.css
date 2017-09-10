@@ -18,6 +18,14 @@
     background-size: cover;
     height: 100%;
     padding: 45vh 10vw;
-    margin: none;
+    margin-top: -20px;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.parallax-background-container {
+	background-image: url('../portfolio-images/creative-macbook.jpg');
+	background-attachment: scroll;
+}
