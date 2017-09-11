@@ -1,14 +1,150 @@
+html, body {
+  overflow-x: hidden;
+  background-color: #1e262c;
+  color: white;
+}
+
+h3 {
+	color: #0099aa;
+	font-size: 1.5em;
+	font-weight: 200;
+	letter-spacing: 4px;
+}
+
+p {
+	color: #d8d8d8;
+	font-size: .9em;
+	font-weight: 300;
+	/*letter-spacing: 2px;*/
+}
+
+q {
+	color: #d8d8d8;
+	font-size: .9em;
+	font-weight: 300;
+}
+footer a {
+	color: #d8d8d8;
+	text-decoration: none;
+	padding-bottom: 20px;
+	text-align: center;
+}
+footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+footer {
+	height: 150px;
+	padding-bottom: 30px;
+	padding-top: 80px;
+	text-align: center;
+}
+
+a img:hover {
+  background-color: #ffffff;
+  opacity: 0.4;
+} 
+.navbar {
+	background-color: #1e262c;
+}
+:target {
+    display: block;    
+    position: relative;     
+    top: -30px;
+    visibility: hidden;
+}
+.destination {
+	padding-bottom: -66px;
+	background: none;
+}
+.modal-content iframe{
+        margin: 0 auto;
+        display: block;
+}
+.f-logo {
+	display: inline;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 3em;
+	font-weight: 200;
+	vertical-align: middle;
+	text-shadow: 5px 5px 10px black;
+}
+.border {
+	border: 4px solid white;
+	border-radius: 10px;
+}
+
+.dbfoto-logo h1 {
+	display: inline;
+	font-size: 4em;
+	font-weight: 300;
+}
+.about {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.icon {
+	color: #0099aa;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.left-buffer {
+	margin-left: 40px;
+}
+.top-buffer {
+	margin-top: 40px;
+}
+.bottom-buffer {
+	margin-bottom: 20px;
+}
 @keyframes logo {
     from {color: rgba(255,255,255,0);}
-    to {color: rgba(255,255,255,.8);}
+    to {color: rgba(255,255,255,1);}
 }
 
 @keyframes logoborder {
-    from {border: solid 5px rgba(255,255,255,0); transform: rotateX(0deg);}
-    to {border: solid 5px rgba(255,255,255,.8); transform: rotateX(360deg);}
+    from {border: solid 4px rgba(255,255,255,0); transform: rotateX(0deg);}
+    to {border: solid 4px rgba(255,255,255,1); transform: rotateX(360deg);}
+}
+.logo h1 {
+	color: rgba(255,255,255,1);
+	animation-name: logo;
+	animation-duration: 7s;
+	font-size: 4em;
+}
+.inline {
+	border: solid 4px rgba(255,255,255,1);
+	border-radius: 12px;
+	animation-name: logoborder;
+	animation-duration: 7s;
+	transform: rotateY(150deg);
+	display: inline;
 }
 
+@media only screen and (max-device-width: 480px) {
+	@keyframes logoborder {
+    from {border: solid 3px rgba(255,255,255,0); transform: rotateX(0deg);}
+    to {border: solid 3px rgba(255,255,255,1); transform: rotateX(360deg);}
+	}
+}
 
+@media only screen and (max-device-width: 480px) {
+	.logo h1 {
+	font-size: 3em;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.inline {
+	border: solid 3px rgba(255,255,255,1);
+	border-radius: 8px;
+	}
+}
 
 .parallax-background-container {
 	background-image: url('../portfolio-images/creative-macbook.jpg');
@@ -28,4 +164,8 @@
 	.parallax-background-container {
 	background-image: url('../portfolio-images/creative-macbook.jpg');
 	background-attachment: scroll;
+	height: 100vh;
 }
+
+
+
